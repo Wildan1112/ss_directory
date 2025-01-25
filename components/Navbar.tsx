@@ -20,12 +20,7 @@ export const Navbar = async () => {
                 <span>Create</span>
               </Link>
 
-              <form
-                action={async () => {
-                  "use server";
-                  await signOut({ redirectTo: "/" });
-                }}
-              >
+              <form>
                 <button type="submit">Logout</button>
               </form>
 
