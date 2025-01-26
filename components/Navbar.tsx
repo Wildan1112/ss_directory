@@ -7,7 +7,7 @@ export const Navbar = async () => {
   const session = await auth();
 
   return (
-    <header className="px-5 py-4 border-b border-slate-100 bg-white shadow-sm font-work-sans">
+    <header className="px-5 py-4 border-b border-slate-100 bg-transparent backdrop-blur-sm shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={155} height={30} />
@@ -20,7 +20,12 @@ export const Navbar = async () => {
                 <span>Create</span>
               </Link>
 
-              <form>
+              <form
+                action={async () => {
+                  "use server";
+                  await signOut({ redirectTo: "/" });
+                }}
+              >
                 <button type="submit">Logout</button>
               </form>
 

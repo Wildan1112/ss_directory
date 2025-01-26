@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import { Work_Sans, IBM_Plex_Sans_JP } from "next/font/google";
 import "./globals.css";
 
 const workSans = Work_Sans({
