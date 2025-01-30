@@ -1,6 +1,7 @@
 import Form from "next/form";
 import { SearchFormReset } from "./SearchFormReset";
 import { Search } from "lucide-react";
+
 export const SearchForm = ({ query }: { query?: string }) => {
   return (
     <Form action="/" scroll={false} className="search-form">
