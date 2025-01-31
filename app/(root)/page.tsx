@@ -15,7 +15,7 @@ export default async function Home({
         </h1>
 
         <p className="sub-heading !max-w-3xl">
-          Submit your ideas, we will bring it to life.
+          Submit your ideas, bring it to life.
         </p>
 
         <SearchForm query={query} />
