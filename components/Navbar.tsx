@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { auth, signIn, signOut } from "@/auth";
+import { Button } from "./ui/button";
 
 export const Navbar = async () => {
   const session = await auth();
@@ -25,7 +26,7 @@ export const Navbar = async () => {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit">Logout</button>
+                <Button type="submit">Logout</Button>
               </form>
 
               <Link href={`user/${session.user.id}`}>
@@ -39,7 +40,9 @@ export const Navbar = async () => {
                 await signIn("google");
               }}
             >
-              <button type="submit">Login</button>
+              <Button variant={"outline"} type="submit">
+                Login with Google
+              </Button>
             </form>
           )}
         </div>
