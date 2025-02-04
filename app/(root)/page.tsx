@@ -12,13 +12,14 @@ export default async function Home({
   const posts = [
     {
       _id: 1,
-      _createdAt: "Today",
+      _createdAt: new Date(),
       views: 89,
       author: {
         _id: 1,
-        name: "azam",
+        name: "Wildan Azam",
       },
-      description: "This is a test description",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque quae illo quod autem alias dicta nostrum non ratione, rem optio excepturi iure! Reiciendis, beatae?",
       image: "https://picsum.photos/200/300",
       category: "IOT",
       title: "New gen IOT",
