@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import Card from "@/components/StartupCard";
 import { SearchForm } from "@/components/SearchForm";
 import Image from "next/image";
 
