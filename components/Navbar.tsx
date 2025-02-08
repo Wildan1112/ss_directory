@@ -41,6 +41,13 @@ export const Navbar = async () => {
               }}
             >
               <Button variant={"outline"} type="submit">
+                <Image
+                  src="/google.svg"
+                  alt="google icon"
+                  width={24}
+                  height={24}
+                  className="mr-2"
+                />
                 Login with Google
               </Button>
             </form>
