@@ -46,7 +46,6 @@ export const Navbar = async () => {
                   alt="google icon"
                   width={24}
                   height={24}
-                  className="mr-2"
                 />
                 Login with Google
               </Button>
