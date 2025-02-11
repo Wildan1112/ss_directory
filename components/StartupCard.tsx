@@ -1,7 +1,7 @@
-import { formatDate } from "@/lib/utils";
-import { EyeIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { formatDate } from "@/lib/utils";
+import { EyeIcon } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Card = ({ post }: { post: any }) => {
